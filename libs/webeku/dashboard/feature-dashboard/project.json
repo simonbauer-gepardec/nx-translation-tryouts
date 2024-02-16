@@ -1,0 +1,9 @@
+{
+  "name": "feature-dashboard",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/webeku/dashboard/feature-dashboard/src",
+  "prefix": "webeku-feature-dashboard",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}

@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@webeku/feature-dashboard": [
+        "libs/webeku/dashboard/feature-dashboard/src/index.ts"
+      ],
+      "@webeku/ui-dashboard": [
+        "libs/webeku/dashboard/ui-dashboard/src/index.ts"
+      ],
+      "@webeku/ui-widgets": ["libs/webeku/widgets/ui-widgets/src/index.ts"],
+      "@webeku/widgets": ["libs/webeku/widgets/feature-widgets/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

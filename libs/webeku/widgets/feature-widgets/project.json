@@ -1,0 +1,26 @@
+{
+  "name": "feature-widgets",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/webeku/widgets/feature-widgets/src",
+  "prefix": "webeku-widgets",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/webeku/widgets/feature-widgets/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/webeku/widgets/feature-widgets/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/webeku/widgets/feature-widgets/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ui-widgets",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/webeku/widgets/ui-widgets/src",
+  "prefix": "webeku-ui-widgets",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/webeku/widgets/ui-widgets/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/webeku/widgets/ui-widgets/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/webeku/widgets/ui-widgets/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    }
+  }
+}

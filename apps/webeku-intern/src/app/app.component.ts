@@ -11,5 +11,10 @@ import { FeatureDashboardComponent } from '@webeku/feature-dashboard';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+
+  switchLanguage(lang: string) {
+
+  }
+
   title = 'webeku-intern';
 }

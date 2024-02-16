@@ -13,7 +13,7 @@ import { FeatureDashboardComponent } from '@webeku/feature-dashboard';
 export class AppComponent {
 
   switchLanguage(lang: string) {
-
+    console.log('switched to', lang);
   }
 
   title = 'webeku-intern';

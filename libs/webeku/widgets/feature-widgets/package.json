@@ -3,13 +3,12 @@
   "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^17.1.0",
-    "@angular/core": "^17.1.0"
+    "@angular/core": "^17.1.0",
+    "@webeku/ui-widgets": "0.0.1"
   },
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
+  "dependencies": {},
   "sideEffects": false
 }

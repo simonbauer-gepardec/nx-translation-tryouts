@@ -4,7 +4,8 @@
   "peerDependencies": {
     "@angular/common": "^17.1.0",
     "@angular/core": "^17.1.0",
-    "@webeku/ui-widgets": "0.0.1"
+    "@webeku/ui-widgets": "0.0.1",
+    "@ngx-translate/core": "^15.0.0"
   },
   "publishConfig": {
     "access": "public"

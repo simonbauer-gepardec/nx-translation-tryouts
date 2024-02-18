@@ -2,4 +2,6 @@
 <button (click)="switchLanguage('de')">deutsch</button>
 <button (click)="switchLanguage('en')">englisch</button>
 {{ 'app.hello' | translate }}
+@if(translationLoaded$ | async) {
 <webeku-feature-dashboard-feature-dashboard />
+}

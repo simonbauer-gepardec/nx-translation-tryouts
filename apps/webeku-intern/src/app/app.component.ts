@@ -4,6 +4,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { FeatureDashboardComponent } from '@webeku/feature-dashboard';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { take, tap } from 'rxjs';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   standalone: true,
@@ -12,6 +13,7 @@ import { take, tap } from 'rxjs';
     RouterModule,
     FeatureDashboardComponent,
     TranslateModule,
+    AsyncPipe,
   ],
   selector: 'webeku-root',
   templateUrl: './app.component.html',
@@ -20,19 +22,8 @@ import { take, tap } from 'rxjs';
 export class AppComponent {
   title = 'webeku-intern';
 
-  constructor(private translate: TranslateService) {
-    translate.setTranslation('de', {
-      app: {
-        hello: 'Hallo Appikation',
-      },
-    });
-
-    translate.setTranslation('en', {
-      app: {
-        hello: 'hello app',
-      },
-    });
-  }
+  translationLoaded$ = this.translate.use(this.translate.getDefaultLang());
+  constructor(private translate: TranslateService) {}
 
   switchLanguage(lang: string) {
     this.translate
